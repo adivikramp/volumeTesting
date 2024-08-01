@@ -28,6 +28,8 @@ app.get("/", (req, res) => {
           return;
         }
         console.log("File created successfully!");
+        console.log(filePath);
+        console.log(tempFolderPath);
         res.send("File created successfully!");
       });
     } else {
@@ -39,6 +41,8 @@ app.get("/", (req, res) => {
           return;
         }
         console.log("File updated successfully!");
+        console.log(filePath);
+        console.log(tempFolderPath);
         res.send("File updated successfully!");
       });
     }
